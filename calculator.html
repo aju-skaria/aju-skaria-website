@@ -1,0 +1,44 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Key‑Person Loss Calculator • Aju Skaria</title>
+  <link href="/assets/style.css" rel="stylesheet">
+  <script defer src="/assets/script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="logo"><a href="/">Aju Skaria</a></div>
+      <div class="menu">
+        <a href="/insights.html">Insights</a>
+        <a href="/calculator.html">Calculator</a>
+        <a href="/press.html">Media</a>
+      </div>
+    </div>
+    <h1 class="hero">Key‑Person Loss Calculator</h1>
+    <div class="grid">
+      <div class="card reveal">
+        <label class="small">Annual revenue (AED)</label>
+        <input class="input" id="rev" type="number" placeholder="e.g., 12,000,000">
+        <label class="small">Profit margin (%)</label>
+        <input class="input" id="margin" type="number" placeholder="e.g., 18">
+        <label class="small">Recovery months</label>
+        <input class="input" id="months" type="number" placeholder="e.g., 9">
+        <label class="small">Probability of loss this year (%)</label>
+        <input class="input" id="prob" type="number" placeholder="e.g., 5">
+        <button class="btn" onclick="calcKeyPerson()">Calculate</button>
+      </div>
+      <div class="card reveal">
+        <h3>Results</h3>
+        <p class="small">Gross profit at risk: AED <b id="outLoss">0</b></p>
+        <p class="small">Expected impact (probability‑weighted): AED <b id="outExp">0</b></p>
+        <p class="small">Use the larger of expected impact or board comfort to size coverage.</p>
+      </div>
+    </div>
+    <footer>© 2025-09-13 Aju Skaria</footer>
+  </div>
+</body>
+</html>
